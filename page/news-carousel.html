@@ -15,21 +15,20 @@
     <meta property="og:locale:alternate" content="fr_FR" />
     <meta property="og:locale:alternate" content="es_ES" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
-    <title>BRIF Promo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BRIF News</title>
     <style>
         * {
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
-        body {
+        body{
             width: 100%;
             margin: 0;
             background-image: linear-gradient(#00284D, #00519B);
             background-repeat: no-repeat;
         }
-        p{
-            font-family: 'Poppins', sans-serif;
-        }
+        p{ font-family: 'Poppins', sans-serif }
         a{
             font-family: 'Poppins', sans-serif;
             color: #FFFFFF;
@@ -61,9 +60,7 @@
             font-size: 80px;
             color: white;
         }
-        .gallery-cell {
-            width: 100%;
-        }
+        .gallery-cell { width: 100% }
 
         @media screen and ( min-width: 768px ) {
         /* half-width cells for larger devices */
@@ -104,7 +101,19 @@
             color: #FFFFFF
         }
         #headerCard p{
-            color: #FFFFFF
+            color: rgba(255, 255, 255, 0.54);
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        #headerCard i{
+            color: rgba(255, 255, 255, 0.54);
+            font-size: 12px;
+        }
+        #rowDirection{
+            display: flex;
+           flex-direction: row; 
+           align-items: center;
+           justify-content: center;
         }
 
         /*! Flickity v1.0.0
@@ -250,45 +259,45 @@
 
 </head>
 <body> 
-    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="../js/flickity.pkgd.min.js"></script>
     <div>
         <div class="headerBackground">
             
             <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>    
                 <img 
                 class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
+                src="https://i.ibb.co/C7kKWLn/cortez.jpg"> 
 
                 <img 
                 class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
-
-                <img 
-                class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
-
-                <img 
-                class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
+                src="https://i.ibb.co/DKxB0Yw/cortez-interior.jpg"> 
             </div>
             
         </div>
 
         <div id='headerCard'>
-            <h1>BRIF Merdeka 75</h1>
-            <p>Periode: 01 Aug - 31 Oct 2020</p>
+            <h1>Cara Wuling Cortez CT Type S Memenuhi Ekspektasi</h1>
+            <div id="rowDirection">
+                <i class="fa">&#xf133;</i>
+                <p>30 Jul 2020</p>
+                <div style="width: 30px;"></div>
+                <i class="fa">&#xf06e;</i>
+                <p>Dilihat 9 Kali</p>
+            </div>
         </div>
 
         <div id='contentCard' class="card">
             <p>
-                1. Jadi Apa sih itu BRIFlexy?</br>BRIFlexy sendiri merupakan program pembiayaan yang saat ini hanya ditujukan untuk karyawan Bank BRI dengan skema besaran angsuran yang bisa disesuaikan dengan keinginan debitur setiap bulannya.</br></br>
-                2. Apa sih bedanya dengan BRIFlexy dengan skema pembiayaan biasa?</br>Untuk skema BRIFlexy pembayaran angsuran ini tidak flat, jadi pembayaran angsuran lebih kecil dari angsuran normal & dengan penuruan pokok hutang yang lebih besar disetiap bulan April.
+                Meski cenderung bebas kekhawatiran, membeli mobil baru tidak boleh serampangan. Apalagi kendaraan pengangkut anggota keluarga. Setidaknya beberapa hal perlu dikalkulasi agar tidak ada yang kecewa di kemudian hari. Ambil contoh menimbang varian teranyar Wuling Cortez CT Type S untuk dibawa pulang. Secara finansial jelas menggiurkan lantaran harganya lebih murah di kelas Medium MPV. Tapi apakah mumpuni untuk memenuhi kebutuhan anggota keluarga? Syarat utama sebuah kendaraan keluarga, tak lain dan tak bukan, adalah akomodasi penumpang. Belum menjadi ‘family car’ sejati kalau tidak mampu mengangkut minimal tujuh orang dengan nyaman. Nyaman mungkin bisa mengandung banyak arti, namun dapat disetujui interpretasi mendasar dalam sebuah MPV adalah kelapangan kabin. Meski saling merasa dekat di hati, ruang fisik jangan sampai terkompromi. Baru dari situ menilai penunjang lain.
             </p>
+            <br/>
+            <p>Penulis: BRI Finance</p>
+            <p id="newsSource">Sumber: kompas.com/artikel/judul-artikel</p>
         </div>
 
-        <a href="page/promo-single-image.html">Promo Single</a><br/>
-        <a href="page/news-single-image.html">News Single</a><br/>
-        <a href="page/news-carousel.html">News Carousel</a><br/>
+        <a href="promo-single-image.html">Promo Single</a><br/>
+        <a href="../index.html">Promo Carousel</a><br/>
+        <a href="news-single-image.html">News Single</a><br/>
         <br/>
         <br/>
 
