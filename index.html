@@ -70,13 +70,12 @@
         .gallery-cell { width: 50%; }
         }
         .headerBackground{
-            background-image: url('../asset/header-bg.png');
+            background-image: url('asset/header-bg.png');
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 10px;
             height: 200px;
             margin: 8px;
-            margin-bottom: 60px;
             padding-top: 40px;
             padding-left: 8px;
             padding-right: 8px;
@@ -91,7 +90,6 @@
         #headerCard{
             width: 100%;
             text-align: center;
-            margin-top: 80px;
             padding: 8px;
         }
         #contentCard{
@@ -246,34 +244,37 @@
             filter: alpha(opacity=100); /* IE8 */
             opacity: 1;
         }
+        .main-gallery{
+            margin: 16px;
+            margin-top: -180px;
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
 <body> 
     <script src="js/flickity.pkgd.min.js"></script>
     <div>
-        <div class="headerBackground">
+        <div class="headerBackground"></div>
             
-            <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>    
-                <img 
-                class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
+        <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>    
+            <img 
+            class="gallery-cell"
+            src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
 
-                <img 
-                class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
+            <img 
+            class="gallery-cell"
+            src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
 
-                <img 
-                class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
+            <img 
+            class="gallery-cell"
+            src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
 
-                <img 
-                class="gallery-cell"
-                src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
-            </div>
-            
+            <img 
+            class="gallery-cell"
+            src="https://miione.southeastasia.cloudapp.azure.com/storage/api/v1/File/CORE/banners/55271b42-b591-42fc-b704-4f299c3307af/abcd7636faa54181b4611894326b642c.jpg"> 
         </div>
-
+            
         <div id='headerCard'>
             <h1>BRIF Merdeka 75</h1>
             <p>Periode: 01 Aug - 31 Oct 2020</p>

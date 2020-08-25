@@ -73,7 +73,6 @@
             border-radius: 10px;
             height: 200px;
             margin: 8px;
-            margin-bottom: 60px;
             padding-top: 40px;
             padding-left: 8px;
             padding-right: 8px;
@@ -88,7 +87,6 @@
         #headerCard{
             width: 100%;
             text-align: center;
-            margin-top: 80px;
             padding: 8px;
         }
         #newsSource{
@@ -260,26 +258,29 @@
             filter: alpha(opacity=100); /* IE8 */
             opacity: 1;
         }
+        .main-gallery{
+            margin: 16px;
+            margin-top: -180px;
+            margin-bottom: 20px;
+        }
     </style>
 
 </head>
 <body> 
     <script src="../js/flickity.pkgd.min.js"></script>
     <div>
-        <div class="headerBackground">
+        <div class="headerBackground"></div>
             
-            <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>    
-                <img 
-                class="gallery-cell"
-                src="https://i.ibb.co/C7kKWLn/cortez.jpg"> 
+        <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true }'>    
+            <img 
+            class="gallery-cell"
+            src="https://i.ibb.co/C7kKWLn/cortez.jpg"> 
 
-                <img 
-                class="gallery-cell"
-                src="https://i.ibb.co/DKxB0Yw/cortez-interior.jpg"> 
-            </div>
-            
+            <img 
+            class="gallery-cell"
+            src="https://i.ibb.co/DKxB0Yw/cortez-interior.jpg"> 
         </div>
-
+        
         <div id='headerCard'>
             <h1>Cara Wuling Cortez CT Type S Memenuhi Ekspektasi</h1>
             <div id="rowDirection">
